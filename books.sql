@@ -9,3 +9,7 @@ CREATE TABLE books (
   rating DECIMAL(1, 1),
   stock_count INTEGER
 )
+
+ALTER TABLE books
+ADD COLUMN publisher TEXT,
+ADD COLUMN n_pages INTEGER;
