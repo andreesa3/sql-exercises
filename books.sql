@@ -80,7 +80,7 @@ VALUES
   );
 
 UPDATE books
-SET price = 15.99
+SET price = 15.99,
     stock_count = stock_count - 1
 WHERE title = 'War and Peace'; 
 
