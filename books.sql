@@ -94,3 +94,11 @@ REVOKE UPDATE ON books FROM 'martin'@'localhost';
 
 DELETE FROM books
 WHERE book_id = 101;
+
+
+BEGIN TRANSACTION;
+
+DELETE FROM books
+WHERE book_id = 103;
+
+COMMIT;
