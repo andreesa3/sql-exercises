@@ -86,8 +86,11 @@ WHERE title = 'War and Peace';
 
 
 GRANT SELECT, UPDATE ON books TO 'martin'@'localhost';
-
 REVOKE DELETE ON books FROM 'martin'@'localhost';
 
 
 REVOKE UPDATE ON books FROM 'martin'@'localhost';
+
+
+DELETE FROM books
+WHERE book_id = 101;
