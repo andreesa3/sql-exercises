@@ -80,7 +80,7 @@ VALUES
   );
 
 UPDATE books
-SET price = 15.99
+SET price = 15.99,
     stock_count = stock_count - 1
 WHERE title = 'War and Peace'; 
 
@@ -90,4 +90,4 @@ GRANT SELECT, UPDATE ON books TO 'martin'@'localhost';
 REVOKE DELETE ON books FROM 'martin'@'localhost';
 
 
-REVOKE UPDATE ON your_database.books FROM 'martin'@'localhost';
+REVOKE UPDATE ON books FROM 'martin'@'localhost';
